@@ -1,0 +1,6 @@
+prod\api\produto\model\ProdutoRepository.class
+prod\api\produto\model\DadosDetalhamentoProduto.class
+prod\api\produto\model\Produto.class
+prod\api\produto\model\DadosCadastroProduto.class
+prod\api\produto\controller\ProdutoController.class
+prod\api\produto\ProdutoApplication.class
