@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  backend:
+    build: ./back/produto
+    container_name: backend
+    restart: always
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+
+
+  db:
+    build: ./bd
+    container_name: bancodedados2
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_DATABASE: produtos
+    ports:
+      - "3307:3306"
+
+
+  frontend:
+    build: ./frontend/Produto
+    container_name: frontend
+    restart: always
+    ports:
+      - "91:80"

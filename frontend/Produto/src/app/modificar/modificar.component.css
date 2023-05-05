@@ -1,0 +1,56 @@
+.main-box {
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+}
+
+.border {
+  border: solid black 2px;
+  border-radius: 25px;
+}
+
+.center-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icone {
+  width: 100px;
+  padding: 50px 40px 40px 40px;
+  border: solid black 2px;
+  border-radius: 100px;
+  margin-top: 40px;
+}
+
+.button {
+  margin-top: 20px;
+  border-radius: 20px;
+  border: solid 2px;
+  transition: ease 0.5s;
+}
+.button:hover {
+  color: green;
+  border-color: green;
+}
+
+.botao-limpar:hover {
+  transition: ease 0.5s;
+  color: red;
+}
+
+mat-icon {
+  font-size: 100px;
+}
+
+mat-form-field {
+  margin-top: 80px;
+  width: 350px;
+}
+
+

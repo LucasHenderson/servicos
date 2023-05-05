@@ -1,0 +1,17 @@
+<form [formGroup]="formulario" class="main-box border center-margin">
+  <div class="icone center-margin">
+    <mat-icon>add_shopping_cart</mat-icon>
+  </div>
+  <div class="center-display">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome do produto</mat-label>
+      <input matInput formControlName="nome">
+      <button class="botao-limpar" *ngIf="ver()" matSuffix mat-icon-button (click)="limpar()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
+  <div class="center-display">
+    <button type="submit" class="button" mat-stroked-button (click)="cadastrarProduto()">CADASTRAR</button>
+  </div>
+</form>

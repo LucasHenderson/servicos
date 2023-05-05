@@ -1,0 +1,25 @@
+.titulo {
+  position: absolute;
+  left: 0;
+  margin-left: 40px;
+}
+
+.botao-ativo{
+  color: #004CBC;
+  border-color: #004CBC;
+}
+
+.botao {
+  margin-right: 20px;
+}
+
+button {
+  border-radius: 20px;
+}
+
+mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

@@ -1,0 +1,17 @@
+<div class="main-box center-margin center-display">
+  <h1 class="center-display">LISTA DE PRODUTOS</h1>
+
+  <div *ngFor="let produto of listaProduto">
+    <p class="center-display-left">
+      ID: {{produto.id!}}
+      NOME: {{produto.nome!}}
+      <button mat-icon-button class="editar" (click)="modificar(produto)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button class="deletar" (click)="deletar(produto.id!)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </p>
+  </div>
+
+</div>
